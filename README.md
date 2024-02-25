@@ -39,6 +39,7 @@ Election Data Inspector is a Ruby on Rails application designed to extract and a
 6. Run `rails db:migrate`
 7. Run `rails db:seed`. This extract data region level from KPU Indonesia and store it into the database. This stage needs a long time to finish.
 8. Run `rails s`
+8. Run `rails s -b 0.0.0.0` for access from another device and ip
 9. Run `bundle exec sidekiq`
 10. Open `http://localhost:3000/admin` and login with seed user `user@example.com` and password `password`
 
