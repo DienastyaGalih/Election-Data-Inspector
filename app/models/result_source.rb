@@ -1,0 +1,2 @@
+class ResultSource < ApplicationRecord
+end

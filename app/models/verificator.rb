@@ -1,0 +1,2 @@
+class Verificator < ApplicationRecord
+end
