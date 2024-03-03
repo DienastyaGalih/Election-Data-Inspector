@@ -76,5 +76,19 @@ Election Data Inspector is a Ruby on Rails application designed to extract and a
 2. Create a new branch
 3. Make a pull request
 
+## kawalpemilu.org worker notes
+1. This worker is used to extract data from kawalpemilu.org
+2. This service worker logic placed in `app/services/farmer/kawal_pemilu_org_president/desa_kelurahan_result.rb`
+3. In kawalpemilu.org atomic data is desa/kelurahan level. 
+4. This worker need to extract data pooling station level from desa/kelurahan level.
+5. In pooling station level items first index is is global status result and all important conclusion data
+6. Second index until n is data from uploaded user
+7. I just used data with totalJagaTps = 1 and totalCompletedTps = 1 in tps level
+8. I think totalJagaTps is equal with status Terjaga in kawalpemilu.org website display
+9. I think totalCompletedTps is equal with status completed in kawalpemilu.org website display
+10. When totalJagaTps = 1  there are empty result in pooling station. So i just used data with totalCompletedTps = 1
+
+
+
 ## License
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
