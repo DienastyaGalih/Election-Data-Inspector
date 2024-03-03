@@ -30,7 +30,7 @@ Election Data Inspector is a Ruby on Rails application designed to extract and a
 3. MySQL
 4. Redis
 
-### Step
+### Run in development
 1. Clone this repository `git clone https://github.com/DienastyaGalih/election_data_inspector.git`
 2. Make .env file and copy .env.example to .env
 3. Fill the .env file with your configuration
@@ -42,6 +42,13 @@ Election Data Inspector is a Ruby on Rails application designed to extract and a
 8. Run `rails s -b 0.0.0.0` for access from another device and ip
 9. Run `bundle exec sidekiq`
 10. Open `http://localhost:3000/admin` and login with seed user `user@example.com` and password `password`
+
+### Run in production
+1. use stage 1-7 in development
+7. Run `rails assets:precompile`
+8. Run `rails s -b 0.0.0.0 -p 80 -e production`
+9. Run `bundle exec sidekiq -e production`
+10. Open `http://your_id_or_domain/admin` and login with seed user 
 
 
 ## How to instant run job for extracting data from KPU Indonesia
