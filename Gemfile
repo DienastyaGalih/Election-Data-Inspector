@@ -57,6 +57,8 @@ gem 'httparty'
 
 gem 'hashdiff'
 
+gem 'dalli'
+
 # Use Sass to process CSS
 # gem "sassc-rails"
 

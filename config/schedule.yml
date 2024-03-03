@@ -1,4 +1,4 @@
 generate_hitung_suara_kpu_president_job:
-  CRON: "<%= ENV['CRON_GENERATE_HITUNG_SUARA_KPU_PRESIDENT_JOB'] %>"
-  ENABLED: <%= ENV['ENABLE_GENERATE_HITUNG_SUARA_KPU_PRESIDENT_JOB'] == 'true' %>
+  cron: "<%= ENV['CRON_GENERATE_HITUNG_SUARA_KPU_PRESIDENT_JOB'] %>"
+  enable: <%= ENV['ENABLE_GENERATE_HITUNG_SUARA_KPU_PRESIDENT_JOB'] == 'true' %>
   class: GenerateHitungSuaraKpuPresidentJob
