@@ -2,3 +2,7 @@ generate_hitung_suara_kpu_president_job:
   cron: "<%= ENV['CRON_GENERATE_HITUNG_SUARA_KPU_PRESIDENT_JOB'] %>"
   enable: <%= ENV['ENABLE_GENERATE_HITUNG_SUARA_KPU_PRESIDENT_JOB'] == 'true' %>
   class: GenerateHitungSuaraKpuPresidentJob
+generate_kawal_pemilu_president_job:
+  cron: "<%= ENV['CRON_GENERATE_KAWAL_PEMILU_PRESIDENT_JOB'] %>"
+  enable: <%= ENV['ENABLE_GENERATE_KAWAL_PEMILU_PRESIDENT_JOB'] == 'true' %>
+  class: GenerateKawalPemiluPresidentJob
